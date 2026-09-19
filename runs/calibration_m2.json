@@ -1,0 +1,28 @@
+{
+  "source": {
+    "data_dir": "/home/sepuhopar/SEM/data/dataset",
+    "layer": "m2",
+    "n_tracks": 44,
+    "n_images": 40,
+    "nm_per_px": 14.65
+  },
+  "measured": {
+    "psf_sigma_px": 3.7573798207828135,
+    "psf_sigma_px_std": 0.7044733610313147,
+    "psf_sigma_nm": 55.04561437446822,
+    "track_width_px": 22.667224319257702,
+    "track_width_nm": 332.07483627712537,
+    "contrast_DN": 47.29946380902109,
+    "sigma_read_DN": 7.163795135136175,
+    "sigma_fg_DN": 9.042315493254858,
+    "snr": 5.230901735767157
+  },
+  "generator_params": {
+    "psf_sigma_absolute": 3.7573798207828135,
+    "psf_sigma_ratio_matched": 6.630507146109822,
+    "psf_to_linewidth_ratio": 0.16576267865274555,
+    "dose": 73.48822028459908,
+    "sigma_g": 0.15145615950449473,
+    "equivalent_k_n": 5.443049218649101
+  }
+}

@@ -1,0 +1,22 @@
+=== Classical detectors: per-image inference time ===
+  threshold   : 10.076 ms/image
+  canny       : 17.304 ms/image
+
+=== Learned (U-Net, base=12): training + inference cost ===
+  seg-only            :   65786 params |   7.71 s/epoch | 20.441 ms/image inference | ~  308.4 s extrapolated to 40 epochs
+  seg+pos             :   65786 params |   8.05 s/epoch | 19.511 ms/image inference | ~  322.1 s extrapolated to 40 epochs
+  seg+pos+rms         :   65786 params |   8.36 s/epoch | 17.704 ms/image inference | ~  334.3 s extrapolated to 40 epochs
+  seg+pos+rms+psd     :   65786 params |   7.70 s/epoch | 17.585 ms/image inference | ~  308.0 s extrapolated to 40 epochs
+  full                :   65786 params |   7.15 s/epoch | 18.613 ms/image inference | ~  285.9 s extrapolated to 40 epochs
+
+=== Table (computational cost, Section 7.9) ===
+                          method   n_params  train_seconds_measured  train_epochs_measured  train_seconds_per_epoch  train_seconds_extrapolated_full  inference_ms_per_image
+            Classical: threshold        NaN                     NaN                    NaN                      NaN                              NaN                 10.0757
+                Classical: canny        NaN                     NaN                    NaN                      NaN                              NaN                 17.3039
+       Learned (U-Net): seg-only 65786.0000                 77.1082                10.0000                   7.7108                         308.4330                 20.4414
+        Learned (U-Net): seg+pos 65786.0000                 80.5338                10.0000                   8.0534                         322.1352                 19.5112
+    Learned (U-Net): seg+pos+rms 65786.0000                 83.5827                10.0000                   8.3583                         334.3307                 17.7039
+Learned (U-Net): seg+pos+rms+psd 65786.0000                 77.0120                10.0000                   7.7012                         308.0480                 17.5848
+           Learned (U-Net): full 65786.0000                 71.4629                10.0000                   7.1463                         285.8518                 18.6135
+
+Note: all timings are CPU wall-clock in whatever environment you run this script in (8 torch threads here) -- re-run on your submission machine and report those numbers, not this sandbox's. The 'extrapolated_full' column is per_epoch_time * --full-epochs (default 40), a linear extrapolation for planning purposes only; actual full-scale runs should still be timed directly.

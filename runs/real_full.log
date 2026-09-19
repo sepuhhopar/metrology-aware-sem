@@ -1,0 +1,66 @@
+Scanning /home/sepuhopar/SEM/data/16895427/data ...
+Using manifest /home/sepuhopar/SEM/data/16895427/data/carinthia-s.csv (4591 image/mask pairs listed).
+Found 4591 image+ground-truth pairs (4591 mask, 0 edge-json, 0 labelme).
+  ...300/4591
+  ...400/4591
+  ...500/4591
+  ...600/4591
+  ...700/4591
+  ...800/4591
+  ...900/4591
+  ...1000/4591
+  ...1100/4591
+  ...1200/4591
+  ...1300/4591
+  ...1400/4591
+  ...1500/4591
+  ...1600/4591
+  ...1700/4591
+  ...1800/4591
+  ...1900/4591
+  ...2000/4591
+  ...2100/4591
+  ...2200/4591
+  ...2300/4591
+  ...2400/4591
+  ...2500/4591
+  ...2600/4591
+  ...2700/4591
+  ...2800/4591
+  ...2900/4591
+  ...3000/4591
+  ...3100/4591
+  ...3200/4591
+  ...3300/4591
+  ...3400/4591
+  ...3500/4591
+  ...3600/4591
+  ...3700/4591
+  ...3800/4591
+  ...3900/4591
+  ...4000/4591
+  ...4100/4591
+  ...4200/4591
+  ...4300/4591
+  ...4400/4591
+  ...4500/4591
+WARNING: 226 matched pair(s) failed to yield usable edges (e.g. empty mask, malformed JSON, too few rows) and were skipped.
+
+=== Real-data LER/LWR summary (4365 images) ===
+                  mean     std    min      max     count
+sigma_L        17.5641 19.4425 0.0000 175.7817 4365.0000
+sigma_R        17.5205 17.5312 0.7471 144.1323 4365.0000
+sigma_W        23.1585 18.6740 1.1604 187.3536 4365.0000
+mean_linewidth 19.9630 24.5898 0.8146 414.7271 4365.0000
+xi_L           11.8638  1.3777 4.9820  48.2279 4365.0000
+alpha_L         0.9496  0.0142 0.2872   0.9500 4365.0000
+xi_R           11.8296  1.7008 0.5000  69.8116 4365.0000
+alpha_R         0.9494  0.0216 0.0500   0.9500 4365.0000
+xi_W           11.3242  1.3281 0.5000  24.1402 4365.0000
+alpha_W         0.9494  0.0194 0.0500   0.9500 4365.0000
+
+Synthetic training grid for comparison: sigma in (1.5, 3.0), xi in (8.0, 20.0), alpha in (0.3, 0.7)
+Fraction of real images with sigma_W (LWR) inside the synthetic sigma range (1.5, 3.0): 1.5% (real sigma_W range: [1.160, 187.354])
+Fraction with xi_W inside synthetic range: 96.6%; alpha_W inside synthetic range: 0.0%
+
+Use this comparison honestly in the manuscript: if a large fraction of real images fall OUTSIDE the synthetic (sigma, xi, alpha) training grid, that is a real domain-gap finding to report, not something to paper over by silently widening the grid after the fact without re-running Tables 2-4.

@@ -1,0 +1,42 @@
+# --- Datasets: never committed (14 GB, third-party licences) -------------
+# Carinthia-S defect dataset, Bochum IC SEM dataset, MIIC.
+# The Bochum dataset (CC-BY 4.0) is the calibration source; see README.
+data/
+
+# Archives
+*.zip
+*.rar
+*.tar
+*.tar.gz
+
+# --- Regenerable artefacts ----------------------------------------------
+# Synthetic images and ground truth are NOT stored: they are regenerated
+# deterministically from MASTER_SEED + per-experiment salt. Nothing to ignore
+# here, but model checkpoints would be:
+*.pt
+*.pth
+*.ckpt
+*.npy
+*.npz
+
+# --- Python --------------------------------------------------------------
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.ipynb_checkpoints/
+
+# --- Scratch -------------------------------------------------------------
+runs/smoke*
+runs/regr_*
+runs/exp2_gpu_*
+nohup.out
+.DS_Store
+
+# LibreOffice lock files
+.~lock.*#
+
+# Manuscripts — not published in the repo
+manuscript_corrections.md
+*.docx
+*.doc

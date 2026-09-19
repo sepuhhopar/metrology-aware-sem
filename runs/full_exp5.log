@@ -1,0 +1,13 @@
+Generating 1920 single-view samples (32 configs x 4 noise levels x 15)...
+  ...600/1920
+  ...1200/1920
+  ...1800/1920
+
+=== Table 4 classical rows (detector x localization, two-edge) ===
+ detector localization  edge_mae  ler_mae  lwr_mae    n
+    canny        pixel    0.5758   0.2242   0.2683 1920
+    canny    sub-pixel    0.3620   0.1170   0.1473 1920
+threshold        pixel    0.4185   0.0646   0.0831 1920
+threshold    sub-pixel    0.2740   0.0641   0.0799 1920
+
+Note: the 'Learned, Seg-only' / 'Learned, Full' rows of Table 4 come from run_experiment2.py's trained models (evaluate them with soft-argmax for 'Full'/sub-pixel and a hard-argmax pass for the 'Seg-only'/pixel row).

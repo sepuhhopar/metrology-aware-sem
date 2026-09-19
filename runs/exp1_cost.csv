@@ -1,0 +1,3 @@
+variant,seed,train_seconds,n_params
+seg-only,0,80.21595120429993,65786
+full,0,152.2695655822754,65786

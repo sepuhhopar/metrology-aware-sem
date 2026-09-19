@@ -1,0 +1,44 @@
+Configs: 16  (sigma x xi x alpha x rho grid)
+
+=== Row 1/4: Classical: Threshold + sub-pixel ===
+
+Training set: 48 paired items
+
+=== Training 'seg-only' (seed 0) for Table 2 ===
+  [seg-only seed=0] epoch 1/12 loss=13.6821 (7.0s)
+  [seg-only seed=0] epoch 2/12 loss=13.4396 (13.6s)
+  [seg-only seed=0] epoch 3/12 loss=12.8598 (20.1s)
+  [seg-only seed=0] epoch 4/12 loss=11.5620 (26.6s)
+  [seg-only seed=0] epoch 5/12 loss=8.4985 (33.3s)
+  [seg-only seed=0] epoch 6/12 loss=6.9293 (39.9s)
+  [seg-only seed=0] epoch 7/12 loss=6.6570 (46.4s)
+  [seg-only seed=0] epoch 8/12 loss=6.5251 (53.1s)
+  [seg-only seed=0] epoch 9/12 loss=6.4603 (59.7s)
+  [seg-only seed=0] epoch 10/12 loss=6.4012 (66.3s)
+  [seg-only seed=0] epoch 11/12 loss=6.3621 (72.9s)
+  [seg-only seed=0] epoch 12/12 loss=6.3206 (79.6s)
+
+=== Training 'full' (seed 0) for Table 2 ===
+  [full seed=0] epoch 1/12 loss=28.7056 (6.8s)
+  [full seed=0] epoch 2/12 loss=26.4376 (17.1s)
+  [full seed=0] epoch 3/12 loss=24.5497 (31.0s)
+  [full seed=0] epoch 4/12 loss=21.4326 (44.4s)
+  [full seed=0] epoch 5/12 loss=18.5346 (57.7s)
+  [full seed=0] epoch 6/12 loss=15.7884 (70.9s)
+  [full seed=0] epoch 7/12 loss=12.0732 (84.5s)
+  [full seed=0] epoch 8/12 loss=8.8401 (97.9s)
+  [full seed=0] epoch 9/12 loss=7.9649 (111.3s)
+  [full seed=0] epoch 10/12 loss=7.9905 (125.0s)
+  [full seed=0] epoch 11/12 loss=7.7616 (138.3s)
+  [full seed=0] epoch 12/12 loss=7.5989 (152.2s)
+
+=== Table 2 (fidelity / baseline comparison, two-edge) -- this run ===
+                                               method  edge_mae  ler_mae  lwr_mae   n
+                     Classical: Threshold + sub-pixel    0.2750   0.0651   0.0702 320
+Learned denoiser + threshold [TBD -- not implemented]       NaN      NaN      NaN   0
+                            Learned (U-Net), Seg-only    0.4059   0.1422   0.1551  64
+                                Learned (U-Net), Full    0.5687   0.0650   0.1114  64
+
+(scale: 1 seed(s), 12 epochs, 3 train realizations/config, 5 classical realizations/config, 16 configs -- see README.md to scale up)
+
+NOTE: row 2 ('Learned denoiser + threshold') is intentionally left blank -- see module docstring. Do not fill it with a guessed number; either train that model and report the real result, or state in the manuscript that this comparison was left for future work.

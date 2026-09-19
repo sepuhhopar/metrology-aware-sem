@@ -1,0 +1,5 @@
+method,edge_mae,ler_mae,lwr_mae,n
+Classical: Threshold + sub-pixel,0.2750134215168602,0.0651495636904856,0.07021305483023654,320
+Learned denoiser + threshold [TBD -- not implemented],,,,0
+"Learned (U-Net), Seg-only",0.4059440663550049,0.14224361162632704,0.1550855115056038,64
+"Learned (U-Net), Full",0.5686772187473252,0.06504789926111698,0.11139991879463196,64

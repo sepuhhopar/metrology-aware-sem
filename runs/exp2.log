@@ -1,0 +1,82 @@
+Training configs: 16  (sigma x xi x alpha x rho grid)
+Training set: 48 paired items
+
+=== Training variant 'seg-only' seed 0 ===
+  [seg-only seed=0] epoch 1/12 loss=13.6823 (13.4s)
+  [seg-only seed=0] epoch 2/12 loss=13.4411 (27.8s)
+  [seg-only seed=0] epoch 3/12 loss=12.8516 (41.6s)
+  [seg-only seed=0] epoch 4/12 loss=11.5646 (55.3s)
+  [seg-only seed=0] epoch 5/12 loss=8.5239 (69.3s)
+  [seg-only seed=0] epoch 6/12 loss=6.9319 (83.2s)
+  [seg-only seed=0] epoch 7/12 loss=6.6891 (97.1s)
+  [seg-only seed=0] epoch 8/12 loss=6.5381 (110.3s)
+  [seg-only seed=0] epoch 9/12 loss=6.4860 (124.6s)
+  [seg-only seed=0] epoch 10/12 loss=6.4257 (138.4s)
+  [seg-only seed=0] epoch 11/12 loss=6.3907 (151.2s)
+  [seg-only seed=0] epoch 12/12 loss=6.3490 (162.9s)
+
+=== Training variant 'seg+pos' seed 0 ===
+  [seg+pos seed=0] epoch 1/12 loss=13.9482 (10.9s)
+  [seg+pos seed=0] epoch 2/12 loss=13.7050 (21.5s)
+  [seg+pos seed=0] epoch 3/12 loss=13.1303 (33.2s)
+  [seg+pos seed=0] epoch 4/12 loss=11.8543 (45.0s)
+  [seg+pos seed=0] epoch 5/12 loss=8.8155 (55.4s)
+  [seg+pos seed=0] epoch 6/12 loss=6.9617 (63.3s)
+  [seg+pos seed=0] epoch 7/12 loss=6.7715 (70.4s)
+  [seg+pos seed=0] epoch 8/12 loss=6.5637 (77.3s)
+  [seg+pos seed=0] epoch 9/12 loss=6.5213 (84.4s)
+  [seg+pos seed=0] epoch 10/12 loss=6.4509 (91.4s)
+  [seg+pos seed=0] epoch 11/12 loss=6.4081 (98.4s)
+  [seg+pos seed=0] epoch 12/12 loss=6.3636 (105.2s)
+
+=== Training variant 'seg+pos+rms' seed 0 ===
+  [seg+pos+rms seed=0] epoch 1/12 loss=19.8434 (6.8s)
+  [seg+pos+rms seed=0] epoch 2/12 loss=19.0700 (13.8s)
+  [seg+pos+rms seed=0] epoch 3/12 loss=17.0016 (20.8s)
+  [seg+pos+rms seed=0] epoch 4/12 loss=16.5390 (27.9s)
+  [seg+pos+rms seed=0] epoch 5/12 loss=15.9506 (34.8s)
+  [seg+pos+rms seed=0] epoch 6/12 loss=15.1672 (41.7s)
+  [seg+pos+rms seed=0] epoch 7/12 loss=13.9906 (48.9s)
+  [seg+pos+rms seed=0] epoch 8/12 loss=11.8421 (56.0s)
+  [seg+pos+rms seed=0] epoch 9/12 loss=8.7326 (62.9s)
+  [seg+pos+rms seed=0] epoch 10/12 loss=7.4518 (69.9s)
+  [seg+pos+rms seed=0] epoch 11/12 loss=7.4325 (76.9s)
+  [seg+pos+rms seed=0] epoch 12/12 loss=7.2482 (84.0s)
+
+=== Training variant 'seg+pos+rms+psd' seed 0 ===
+  [seg+pos+rms+psd seed=0] epoch 1/12 loss=28.8066 (6.9s)
+  [seg+pos+rms+psd seed=0] epoch 2/12 loss=26.6291 (13.9s)
+  [seg+pos+rms+psd seed=0] epoch 3/12 loss=24.8726 (20.7s)
+  [seg+pos+rms+psd seed=0] epoch 4/12 loss=21.6391 (27.7s)
+  [seg+pos+rms+psd seed=0] epoch 5/12 loss=18.8494 (34.8s)
+  [seg+pos+rms+psd seed=0] epoch 6/12 loss=16.1478 (41.8s)
+  [seg+pos+rms+psd seed=0] epoch 7/12 loss=12.2594 (48.8s)
+  [seg+pos+rms+psd seed=0] epoch 8/12 loss=8.7058 (56.1s)
+  [seg+pos+rms+psd seed=0] epoch 9/12 loss=7.9326 (63.4s)
+  [seg+pos+rms+psd seed=0] epoch 10/12 loss=8.0013 (70.2s)
+  [seg+pos+rms+psd seed=0] epoch 11/12 loss=7.7172 (77.2s)
+  [seg+pos+rms+psd seed=0] epoch 12/12 loss=7.5487 (84.0s)
+
+=== Training variant 'full' seed 0 ===
+  [full seed=0] epoch 1/12 loss=28.8149 (6.9s)
+  [full seed=0] epoch 2/12 loss=26.6210 (13.6s)
+  [full seed=0] epoch 3/12 loss=24.8602 (20.3s)
+  [full seed=0] epoch 4/12 loss=21.7838 (27.1s)
+  [full seed=0] epoch 5/12 loss=18.9566 (33.8s)
+  [full seed=0] epoch 6/12 loss=16.1450 (40.4s)
+  [full seed=0] epoch 7/12 loss=12.4074 (47.0s)
+  [full seed=0] epoch 8/12 loss=8.9776 (53.8s)
+  [full seed=0] epoch 9/12 loss=7.9893 (60.6s)
+  [full seed=0] epoch 10/12 loss=7.8675 (67.2s)
+  [full seed=0] epoch 11/12 loss=7.6182 (73.9s)
+  [full seed=0] epoch 12/12 loss=7.5283 (80.4s)
+
+=== Table 3 (loss ablation) -- this pilot run ===
+         method  edge_mae_mean  edge_mae_std  ler_mae_mean  ler_mae_std  lwr_mae_mean  lwr_mae_std  n
+       seg-only         0.4244        0.1958        0.1567       0.1018        0.1695       0.1272 64
+        seg+pos         0.4113        0.1907        0.1423       0.0953        0.1523       0.1186 64
+    seg+pos+rms         0.4433        0.2054        0.1314       0.0798        0.1354       0.1042 64
+seg+pos+rms+psd         0.5960        0.3361        0.0777       0.0688        0.1414       0.1546 64
+           full         0.5152        0.2950        0.0631       0.0452        0.1078       0.1247 64
+
+(scale: 1 seed(s), 12 epochs, 3 train realizations/config, 16 configs -- see docstring to scale up)
