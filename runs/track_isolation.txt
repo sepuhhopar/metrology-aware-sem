@@ -1,0 +1,11 @@
+tracks examined: 30  (from 15 images, layer m2)
+single structure within +-60 px: 3 (10%)
+
+track width      : median 23.0 px (337 nm)
+gap to neighbour : median 24.0 px (352 nm), p25 22.0, p75 24.0, max 28
+pitch            : median 47.0 px (689 nm)
+
+clear background needed on EACH side to fill the synthetic field: 37 px
+tracks meeting it: 0/30 (0.0%)
+
+-> The generator renders one isolated line per field. Real layouts at this pitch cannot supply that, so every real crop contains neighbouring tracks. Acquisition calibration corrects blur and noise, not scene content, and therefore cannot expose this mismatch.
